@@ -11,9 +11,9 @@ if __name__ == '__main__':
 
     if min(A) < 0:
         pr = 0
-        for i in range(len(A)):
-            if A[i] < 0:
-                pr += A[i]
+        for i in A:
+            if i < 0:
+                pr += i
         print(pr)
     else:
         print(0)
